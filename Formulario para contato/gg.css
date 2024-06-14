@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-template-areas:
+    "cabecalho cabecalho cabecalho"
+    "lateral contactForm conteudo"
+    "rodape rodape rodape";
+  background-color: rgb(223, 223, 223);
+}
+
+header {
+  display: grid;
+  grid-area: cabecalho;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside {
+  display: grid;
+  grid-area: lateral;
+}
+
+form {
+  display: grid;
+  grid-area: contactForm;
+  padding: 24vh;
+}
+.ppg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh;
+  width: 80vh;
+  height: 47vh;
+  background-color: rgb(253, 253, 253);
+  border-radius: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: grid;
+  grid-area: conteudo;
+}
+
+footer {
+  display: grid;
+  grid-area: rodape;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+.inputError {
+  border: 1px solid red;
+}
+
+button {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 7vh;
+  height: 3vh;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+}
+
+#message {
+  height: 18vh;
+  width: 80vh;
+}
+#name {
+  width: 78vh;
+}
+#email {
+  width: 78vh;
+}
+
+input {
+  padding: 9px;
+  border-radius: 4px;
+}
+textarea {
+  border-radius: 2px;
+}

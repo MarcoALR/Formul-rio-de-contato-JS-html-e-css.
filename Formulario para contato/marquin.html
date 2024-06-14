@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="gg.css">
+    <title>Furmulário de Cotato</title>
+</head>
+
+<body>
+
+    <header class="cabecalho"></header>
+
+    <aside class="lateral"></aside>
+
+    <form id="contactForm">
+
+        <div class="ppg">
+
+            <h2>Formulário de Contato</h2>
+
+            <section>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+                <div id="nameError" class="error"></div>
+            </section>
+
+            <section>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <div id="emailError" class="error"></div>
+            </section>
+
+            <section>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message"></textarea>
+                <div id="messageError" class="error"></div>
+            </section>
+            
+            <section>
+                <button type="submit" value="Enviar">Enviar</button>
+            </section>
+        </div>
+    </form>
+
+    <main class="conteudo"></main>
+
+    <footer class="rodape"></footer>
+
+    <script src="marco.js"></script>
+
+</body>
+
+</html>
